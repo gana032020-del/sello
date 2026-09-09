@@ -1,0 +1,30 @@
+name: Trabajo
+description: Una pieza concreta para Sello / Nanub.
+title: "[trabajo] "
+labels: ["triage", "p2"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options: [bug, mejora, caja, docs]
+    validations:
+      required: true
+  - type: textarea
+    id: listo
+    attributes:
+      label: Listo cuando
+    validations:
+      required: true
+  - type: textarea
+    id: alcance
+    attributes:
+      label: Alcance
+    validations:
+      required: true
+  - type: textarea
+    id: prueba
+    attributes:
+      label: Prueba
+    validations:
+      required: true
